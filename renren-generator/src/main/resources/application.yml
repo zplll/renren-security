@@ -6,15 +6,15 @@ server:
         min-spare-threads: 30
     port: 8082
     servlet:
-        context-path: /renren-generator
+        context-path: /
 
 # mysql
 spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/renren_security?useUnicode=true&characterEncoding=UTF-8
-        username: renren
+        url: jdbc:mysql://localhost:3306/tpf?useUnicode=true&characterEncoding=UTF-8
+        username: root
         password: 123456
     jackson:
         time-zone: GMT+8
